@@ -3,16 +3,22 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/pages/index.css" />
+        <link rel="stylesheet" href="/css/base.css" />
         <title><%= title %></title>
     </head>
     <body>
-        <form method="POST" action="/new">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" />
-            <label for="message">Input Message:</label>
-            <input type="text" id="message" name="message" />
-            <input type="submit" />
-        </form>
-        <button onclick="window.location.href = '../'">Back</button>
+        <div class="page">
+            <div class="content">
+                <form method="POST" action="/new">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" />
+                    <label for="message">Input Message:</label>
+                    <input type="text" id="message" name="message" />
+                    <input type="submit" />
+                </form>
+                <button onclick="window.location.href = '../'">Back</button>
+            </div>
+        </div>
     </body>
 </html>

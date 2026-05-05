@@ -1,4 +1,10 @@
+<head>
+    <link rel="stylesheet" href="/css/components/message.css" />
+</head>
 <li>
-    <div>From: <%= message.user %> on <%= message.added %></div>
-    <%= message.text %>
+    <div class="message">
+        <div><%= message.user %></div>
+        <div><%= message.added %></div>
+        <%= message.text %>
+    </div>
 </li>

@@ -2,15 +2,22 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <link rel="stylesheet" href="/css/pages/index.css" />
+        <link rel="stylesheet" href="/css/base.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title><%= title %></title>
     </head>
     <body>
-        <ul>
-            <% messages.forEach((message) => { %>
-                <%- include("../partials/message", { message: message }) %>
-            <% }); %>
-        </ul>
-        <button onclick="window.location.href='/new';">New Message</button>
+        <div class="page">
+            <div class="content">
+                <h1>Message Board</h1>
+                <ul>
+                    <% messages.forEach((message) => { %>
+                        <%- include("../partials/message", { message: message }) %>
+                    <% }); %>
+                </ul>
+                <button onclick="window.location.href='/new';">New Message</button>
+            </div>
+        </div>
     </body>
 </html>

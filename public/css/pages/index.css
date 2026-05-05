@@ -1,0 +1,16 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.content > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* adjust as you like */
+}
