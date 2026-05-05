@@ -10,8 +10,15 @@ newRouter.get("/", (req, res) => {
 newRouter.post("/", (req, res) => {
     messages.push({
         text: req.body.message,
-        name: req.body.name,
-        added: new Date(),
+        user: req.body.name,
+        added: new Date("Mar 25 2015").toLocaleString("en-US", {
+            month: "short",
+            day: "numeric",
+            year: "numeric",
+            hour: "numeric",
+            minute: "2-digit",
+            hour12: true,
+        }),
     });
     res.redirect("../");
 });

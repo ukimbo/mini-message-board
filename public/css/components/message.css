@@ -1,5 +1,6 @@
 .message {
     padding: 16px;
+    flex: 1;
     background-color: #252525;
     border-style: solid;
     border-width: 2px;

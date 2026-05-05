@@ -12,5 +12,6 @@ h1 {
 .content > ul {
     display: flex;
     flex-direction: column;
-    gap: 16px; /* adjust as you like */
+    gap: 16px;
+    width: 100%;
 }
