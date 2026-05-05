@@ -7,3 +7,16 @@
     border-radius: 8px;
     border-color: #7d7d7d;
 }
+
+.metadata {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 1.25rem;
+}
+
+.date {
+    color: #7d7d7d;
+}
