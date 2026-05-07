@@ -1,0 +1,17 @@
+.button {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 16px;
+    padding: 12px;
+    align-self: center;
+    width: auto;
+    transition:
+        background-color 0.1s,
+        color 0.1s,
+        border-color 0.1s;
+}
+
+.button:hover {
+    border-color: #cfcfcf;
+    cursor: pointer;
+}

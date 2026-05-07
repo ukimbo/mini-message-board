@@ -4,3 +4,12 @@
     gap: 16px;
     width: 100%;
 }
+
+.button {
+    background-color: #252525;
+    border-color: #545454;
+}
+
+.button:hover {
+    background-color: #545454;
+}
