@@ -13,3 +13,7 @@
 .button:hover {
     background-color: #545454;
 }
+
+a {
+    text-decoration: none;
+}

@@ -5,7 +5,9 @@
     <div class="entry">
         <div class="name">
             <div><%= message.user %></div>
-            <div>&#10247;</div>
+            <% if (showDetails) { %>
+                <a href="./message-details/<%=message.id%>">&#10247;</a>
+            <% } %>
         </div>
         <%= message.text %>
         <div class="date"><%= message.added %></div>

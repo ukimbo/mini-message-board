@@ -1,7 +1,7 @@
 const express = require("express");
 const indexRouter = require("./routes/indexRouter");
 const newRouter = require("./routes/newRouter");
-const messageRouter = require("./routes/messageRouter");
+const messageRouter = require("./routes/messageDetailsRouter");
 
 const path = require("node:path");
 
@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/", indexRouter);
 app.use("/new", newRouter);
-app.use("/message", messageRouter);
+app.use("/message-details", messageRouter);
 
 app.use((err, req, res, next) => {
     res.status(err.statusCode || 500).send(err.message);

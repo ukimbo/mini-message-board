@@ -14,7 +14,7 @@
                 <h1>Message Board</h1>
                 <ul class="forum">
                     <% messages.forEach((message) => { %>
-                        <%- include("../partials/message", { message: message }) %>
+                        <%- include("../partials/message", { message: message, showDetails: true }) %>
                     <% }); %>
                 </ul>
                 <button class="button" onclick="window.location.href='/new';">New Message</button>

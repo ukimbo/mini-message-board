@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const getMessageDetails = require("../controllers/messageController");
+const getMessageDetails = require("../controllers/messageDetailsController");
 
 const messageRouter = Router();
 
