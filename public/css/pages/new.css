@@ -1,0 +1,28 @@
+.forum {
+    width: 100%;
+}
+
+.entry {
+    gap: 16px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.15rem;
+    gap: 2px;
+}
+
+.input-field > input {
+    padding: 8px;
+    border-radius: 8px;
+    color: #cfcfcf;
+    background-color: #252525;
+    border-color: #7d7d7d;
+    transition: border-color 0.5s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #cfcfcf;
+}

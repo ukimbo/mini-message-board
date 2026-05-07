@@ -2,11 +2,9 @@
     <link rel="stylesheet" href="/css/components/message.css" />
 </head>
 <li>
-    <div class="message">
-        <div class="metadata">
-            <div class="name"><%= message.user %></div>
-            <%= message.text %>
-            <div class="date"><%= message.added %></div>
-        </div>
+    <div class="entry">
+        <div class="name"><%= message.user %></div>
+        <%= message.text %>
+        <div class="date"><%= message.added %></div>
     </div>
 </li>
