@@ -3,7 +3,10 @@
 </head>
 <li>
     <div class="entry">
-        <div class="name"><%= message.user %></div>
+        <div class="name">
+            <div><%= message.user %></div>
+            <div>&#10247;</div>
+        </div>
         <%= message.text %>
         <div class="date"><%= message.added %></div>
     </div>
