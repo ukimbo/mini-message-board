@@ -14,15 +14,31 @@
 }
 
 .input-field > input {
-    padding: 8px;
+    padding: 12px;
     border-radius: 8px;
     color: #cfcfcf;
     background-color: #252525;
     border-color: #7d7d7d;
-    transition: border-color 0.5s;
+    border-width: 2px;
+    transition: border-color 0.2s;
 }
 
 input:focus {
     outline: none;
+    border-color: #cfcfcf;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: #545454;
+    border-color: #252525;
+}
+
+.button:hover {
+    background-color: #252525;
     border-color: #cfcfcf;
 }
